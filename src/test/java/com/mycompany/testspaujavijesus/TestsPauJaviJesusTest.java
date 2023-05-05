@@ -9,6 +9,7 @@ import static org.junit.Assert.*;
 
 public class TestsPauJaviJesusTest {
  class_test checker = new class_test(0, 0);
+ class_test check_positiu = new class_test(0);
     
     /**
      *
@@ -29,7 +30,12 @@ public void sumaEnteros(){
      * @author JavierRiscos
      */
 
-
+@Test
+public void checkPositiu() {
+  System.out.println("Comprobar si es un numero positiu");
+  int numero = check_positiu.positiu(2);
+  assertEquals(2,numero);
+}
 
 
 

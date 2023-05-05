@@ -10,6 +10,10 @@ public class class_test {
         this.num2 = n2;
     }
 
+    public class_test(int n1) {
+        this.num1 = n1;
+    }
+
     public int suma(int Nombre1, int Nombre2) {
         int x;
         x = Nombre1 + Nombre2;
@@ -28,7 +32,12 @@ public class class_test {
         return x;
     }
 
-    public boolean positiu(int Nombre) {
-        return Nombre > 0;
+    public int positiu(int Nombre) {
+        int x = 0;
+        if (Nombre > 0) {
+            return Nombre;
+        } else {
+            return 0;
+        }
     }
 }
