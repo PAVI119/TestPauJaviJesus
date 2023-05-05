@@ -43,5 +43,12 @@ public void checkPositiu() {
      *
      * @author JesusAmeller
      */
+
+@Test
+public void checkrestaEnteros(){
+  System.out.println("Comprovar una resta de enters");
+  int numero = checker.resta(7, 5);
+  assertEquals(2, numero);
+}
 }
 
